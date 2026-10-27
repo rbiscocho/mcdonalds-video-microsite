@@ -26,26 +26,29 @@
 <body class="bg-white text-mcd-dark">
 
   <!-- Navigation -->
-  <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+  <nav class="sticky top-0 z-50 bg-white border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <div class="flex items-center gap-8">
           <a href="index.html" class="flex items-center gap-2">
-            <svg class="w-10 h-10" viewBox="0 0 100 100" fill="none">
-              <path d="M20 75 C20 40 35 20 50 20 C65 20 80 40 80 75" stroke="#FFC72C" stroke-width="12" stroke-linecap="round" fill="none"/>
-              <path d="M35 75 C35 50 42 35 50 35 C58 35 65 50 65 75" stroke="#FFC72C" stroke-width="10" stroke-linecap="round" fill="none"/>
+            <svg class="w-9 h-9" viewBox="0 0 100 100" fill="none">
+              <path d="M18 78 C18 38 36 18 50 18 C64 18 82 38 82 78" stroke="#FFC72C" stroke-width="14" stroke-linecap="round" fill="none"/>
+              <path d="M34 78 C34 50 42 34 50 34 C58 34 66 50 66 78" stroke="#FFC72C" stroke-width="11" stroke-linecap="round" fill="none"/>
             </svg>
-            <span class="font-bold text-xl tracking-tight">McDonald's</span>
+            <span class="font-bold text-lg tracking-tight text-mcd-dark">McDonald's</span>
           </a>
-          <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <div class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-700">
             <a href="#how-it-works" class="hover:text-mcd-red transition">How it Works</a>
             <a href="#prizes" class="hover:text-mcd-red transition">Prizes</a>
             <a href="dashboard.html" class="hover:text-mcd-red transition">Gallery</a>
           </div>
         </div>
-        <div class="flex items-center gap-3">
-          <a href="register.html" class="text-sm font-medium hover:text-mcd-red transition hidden sm:block">Login</a>
-          <a href="register.html" class="bg-mcd-red text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-red-700 transition shadow-sm">
+        <div class="flex items-center gap-4">
+          <a href="register.html" class="hidden sm:flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-mcd-red transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            Login / Register
+          </a>
+          <a href="register.html" class="bg-mcd-red text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-red-700 transition shadow-sm">
             Start Your Submission
           </a>
         </div>
@@ -54,53 +57,53 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-red-50 via-white to-yellow-50"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+  <section class="relative overflow-hidden bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        
+        <!-- Left Content -->
+        <div class="order-2 lg:order-1">
+          <h1 class="text-4xl sm:text-5xl lg:text-[3.4rem] font-extrabold leading-[1.1] tracking-tight text-mcd-dark">
             Share Your<br>
             <span class="text-mcd-red">McDonald's Moment</span>
           </h1>
-          <p class="mt-6 text-lg text-gray-600 max-w-lg">
-            Upload a short video of your McDonald's moment for a chance to win exciting prizes! Capture the joy, share the flavor.
+          
+          <div class="mt-5 w-16 h-1.5 bg-mcd-yellow rounded-full"></div>
+          
+          <p class="mt-6 text-xl font-semibold text-mcd-dark">
+            Upload your video and <span class="text-mcd-yellow">win!</span>
           </p>
-          <div class="mt-8 flex flex-wrap gap-4">
-            <a href="submit.html" class="inline-flex items-center gap-2 bg-mcd-yellow text-mcd-dark px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition shadow-md">
-              Upload Your Video
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
-            </a>
-            <a href="dashboard.html" class="inline-flex items-center gap-2 border-2 border-mcd-red text-mcd-red px-8 py-4 rounded-full font-bold text-lg hover:bg-red-50 transition">
-              View Gallery
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          
+          <p class="mt-3 text-gray-600 max-w-md leading-relaxed">
+            Capture your McDonald's moment, share it with the world, and you could win amazing prizes.
+          </p>
+          
+          <div class="mt-8">
+            <a href="submit.html" class="inline-flex items-center gap-2 bg-mcd-yellow hover:bg-yellow-400 text-mcd-dark px-7 py-3.5 rounded-full font-bold text-base transition shadow-md">
+              Start Your Submission
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
           </div>
-          <div class="mt-8 flex items-center gap-6 text-sm text-gray-500">
-            <div class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              Safe & secure
+          
+          <div class="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-gray-500">
+            <div class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              Safe, secure and easy to enter
             </div>
-            <div class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              Ages 13+
-            </div>
+            <span class="text-gray-300">•</span>
+            <span>Open to ages 13 and up</span>
           </div>
         </div>
-        <div class="relative">
-          <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
-            <img src="hero-people.jpg" 
-                 onerror="this.src='https://images.unsplash.com/photo-1550547660-d9450f859349?w=900&q=80'"
-                 alt="Friends enjoying burgers and fries together" 
-                 class="w-full h-full object-cover">
-          </div>
-          <!-- Floating cards -->
-          <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3">
-            <div class="w-12 h-12 bg-mcd-yellow rounded-full flex items-center justify-center text-2xl">🏆</div>
-            <div>
-              <p class="font-bold text-sm">Win Amazing Prizes</p>
-              <p class="text-xs text-gray-500">Gift cards, gadgets & more</p>
-            </div>
+        
+        <!-- Right Hero Image -->
+        <div class="order-1 lg:order-2 relative">
+          <div class="rounded-2xl overflow-hidden shadow-xl">
+            <img 
+              src="hero-people.jpg" 
+              alt="Three friends laughing and enjoying McDonald's fries and drinks"
+              class="w-full h-auto object-cover"
+              onerror="this.src='https://images.unsplash.com/photo-1550547660-d9450f859349?w=900&q=80'"
+            >
           </div>
         </div>
       </div>
@@ -108,83 +111,118 @@
   </section>
 
   <!-- How it Works -->
-  <section id="how-it-works" class="py-20 bg-gray-50">
+  <section id="how-it-works" class="py-14 bg-white border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14">
-        <h2 class="text-3xl sm:text-4xl font-extrabold">How it Works</h2>
-        <p class="mt-3 text-gray-600">It's simple. Share. Inspire. Win.</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 text-center">
-          <div class="w-16 h-16 bg-mcd-red text-white rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5">1</div>
-          <h3 class="text-xl font-bold mb-2">Upload</h3>
-          <p class="text-gray-600">Share your McDonald's moment video. Keep it fun, real, and under 60 seconds.</p>
+      <div class="grid md:grid-cols-4 gap-8 items-start">
+        
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-10 h-10 bg-mcd-red rounded-full flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h6l2 2h6a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/></svg>
+            </div>
+            <h2 class="text-xl font-bold">How it Works</h2>
+          </div>
+          <p class="text-sm text-gray-500">It's quick and easy to join the fun.</p>
         </div>
-        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 text-center">
-          <div class="w-16 h-16 bg-mcd-yellow text-mcd-dark rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5">2</div>
-          <h3 class="text-xl font-bold mb-2">Inspire</h3>
-          <p class="text-gray-600">Get votes, inspire others, and see your video featured in the gallery.</p>
-        </div>
-        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 text-center">
-          <div class="w-16 h-16 bg-mcd-red text-white rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5">3</div>
-          <h3 class="text-xl font-bold mb-2">Win</h3>
-          <p class="text-gray-600">Winners are announced monthly. Amazing prizes await the best moments!</p>
+        
+        <div class="md:col-span-3 grid sm:grid-cols-3 gap-6">
+          <div class="flex items-start gap-3">
+            <div class="w-10 h-10 bg-mcd-yellow rounded-full flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-mcd-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-sm">1. Upload</p>
+              <p class="text-sm text-gray-500 mt-0.5">Share your McDonald's moment video</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-3">
+            <div class="w-10 h-10 bg-mcd-red rounded-full flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-sm">2. Inspire</p>
+              <p class="text-sm text-gray-500 mt-0.5">Get votes and inspire others</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-3">
+            <div class="w-10 h-10 bg-mcd-yellow rounded-full flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-mcd-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-sm">3. Win</p>
+              <p class="text-sm text-gray-500 mt-0.5">Winners are announced monthly!</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Prizes -->
-  <section id="prizes" class="py-20">
+  <section id="prizes" class="py-12 bg-gray-50 border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14">
-        <h2 class="text-3xl sm:text-4xl font-extrabold">Prizes Worth Winning</h2>
-        <p class="mt-3 text-gray-600">Great moments deserve great rewards.</p>
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+        
+        <div class="flex items-start gap-4 max-w-xs">
+          <div class="w-10 h-10 bg-mcd-red rounded-lg flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"/><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-lg font-bold">Prizes Worth Winning</h2>
+            <p class="text-sm text-gray-500 mt-1">Great moments deserve great rewards. Check out the prizes!</p>
+          </div>
+        </div>
+        
+        <div class="flex flex-wrap items-center gap-6 lg:gap-10">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center border border-gray-100">
+              <span class="text-2xl">🎁</span>
+            </div>
+            <div>
+              <p class="font-bold text-sm">$500</p>
+              <p class="text-xs text-gray-500">McDonald's Gift Card</p>
+            </div>
+          </div>
+          
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center border border-gray-100">
+              <span class="text-2xl">⌚</span>
+            </div>
+            <div>
+              <p class="font-bold text-sm">Apple Watch</p>
+              <p class="text-xs text-gray-500">Latest Series</p>
+            </div>
+          </div>
+          
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center border border-gray-100">
+              <span class="text-2xl">🎧</span>
+            </div>
+            <div>
+              <p class="font-bold text-sm">AirPods Pro</p>
+              <p class="text-xs text-gray-500">Premium sound</p>
+            </div>
+          </div>
+          
+          <a href="#prizes" class="text-mcd-red font-semibold text-sm hover:underline flex items-center gap-1">
+            View All Prizes
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
       </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white border border-gray-100 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition">
-          <div class="text-4xl mb-3">🎁</div>
-          <h3 class="font-bold">$500 Gift Card</h3>
-          <p class="text-sm text-gray-500 mt-1">McDonald's Gift Card</p>
-        </div>
-        <div class="bg-white border border-gray-100 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition">
-          <div class="text-4xl mb-3">⌚</div>
-          <h3 class="font-bold">Apple Watch</h3>
-          <p class="text-sm text-gray-500 mt-1">Latest Series</p>
-        </div>
-        <div class="bg-white border border-gray-100 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition">
-          <div class="text-4xl mb-3">🎧</div>
-          <h3 class="font-bold">AirPods Pro</h3>
-          <p class="text-sm text-gray-500 mt-1">Premium sound</p>
-        </div>
-        <div class="bg-white border border-gray-100 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition">
-          <div class="text-4xl mb-3">📱</div>
-          <h3 class="font-bold">iPad</h3>
-          <p class="text-sm text-gray-500 mt-1">10th Generation</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Banner -->
-  <section class="py-16 bg-mcd-red">
-    <div class="max-w-4xl mx-auto px-4 text-center text-white">
-      <h2 class="text-3xl sm:text-4xl font-extrabold">Ready to share your moment?</h2>
-      <p class="mt-4 text-lg opacity-90">Join thousands of fans already submitting their stories.</p>
-      <a href="submit.html" class="inline-block mt-8 bg-mcd-yellow text-mcd-dark px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition shadow-lg">
-        Start Your Submission Now
-      </a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-mcd-dark text-white py-12">
+  <footer class="bg-mcd-dark text-white py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row justify-between items-center gap-6">
         <div class="flex items-center gap-2">
           <svg class="w-8 h-8" viewBox="0 0 100 100" fill="none">
-            <path d="M20 75 C20 40 35 20 50 20 C65 20 80 40 80 75" stroke="#FFC72C" stroke-width="12" stroke-linecap="round" fill="none"/>
-            <path d="M35 75 C35 50 42 35 50 35 C58 35 65 50 65 75" stroke="#FFC72C" stroke-width="10" stroke-linecap="round" fill="none"/>
+            <path d="M18 78 C18 38 36 18 50 18 C64 18 82 38 82 78" stroke="#FFC72C" stroke-width="14" stroke-linecap="round" fill="none"/>
+            <path d="M34 78 C34 50 42 34 50 34 C58 34 66 50 66 78" stroke="#FFC72C" stroke-width="11" stroke-linecap="round" fill="none"/>
           </svg>
           <span class="font-bold">McDonald's</span>
         </div>
