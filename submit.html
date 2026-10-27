@@ -25,19 +25,20 @@
 </head>
 <body class="bg-gray-50 text-mcd-dark min-h-screen">
 
+  <!-- Navigation -->
   <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <a href="index.html" class="flex items-center gap-2">
           <svg class="w-9 h-9" viewBox="0 0 100 100" fill="none">
-            <path d="M20 75 C20 40 35 20 50 20 C65 20 80 40 80 75" stroke="#FFC72C" stroke-width="12" stroke-linecap="round" fill="none"/>
-            <path d="M35 75 C35 50 42 35 50 35 C58 35 65 50 65 75" stroke="#FFC72C" stroke-width="10" stroke-linecap="round" fill="none"/>
+            <path d="M18 78 C18 38 36 18 50 18 C64 18 82 38 82 78" stroke="#FFC72C" stroke-width="14" stroke-linecap="round" fill="none"/>
+            <path d="M34 78 C34 50 42 34 50 34 C58 34 66 50 66 78" stroke="#FFC72C" stroke-width="11" stroke-linecap="round" fill="none"/>
           </svg>
-          <span class="font-bold text-lg">McDonald's</span>
+          <span class="font-bold text-lg tracking-tight">McDonald's</span>
         </a>
         <div class="flex items-center gap-4">
           <a href="dashboard.html" class="text-sm font-medium text-gray-600 hover:text-mcd-red transition">My Submissions</a>
-          <div class="w-9 h-9 bg-mcd-yellow rounded-full flex items-center justify-center font-bold text-sm">JD</div>
+          <div class="w-9 h-9 bg-mcd-yellow rounded-full flex items-center justify-center font-bold text-sm text-mcd-dark">JD</div>
         </div>
       </div>
     </div>
@@ -45,6 +46,8 @@
 
   <div class="max-w-5xl mx-auto px-4 py-10">
     <div class="grid lg:grid-cols-12 gap-8">
+      
+      <!-- Progress Sidebar -->
       <div class="lg:col-span-3">
         <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 sticky top-24">
           <h3 class="font-bold text-sm text-gray-500 uppercase tracking-wide mb-5">Progress</h3>
@@ -74,12 +77,15 @@
         </div>
       </div>
 
+      <!-- Main Form -->
       <div class="lg:col-span-9">
         <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-10">
           <h1 class="text-2xl sm:text-3xl font-extrabold">Submit a Video</h1>
           <p class="mt-2 text-gray-600">Share your McDonald's moment with us!</p>
 
           <form class="mt-8 space-y-6" onsubmit="event.preventDefault(); alert('Video submitted successfully! (This is a prototype)'); window.location.href='dashboard.html';">
+            
+            <!-- Upload Zone -->
             <div>
               <label class="block text-sm font-medium mb-2">Video File *</label>
               <div id="dropzone" class="border-2 border-dashed border-gray-300 rounded-2xl p-10 text-center hover:border-mcd-yellow hover:bg-yellow-50/50 transition cursor-pointer"
