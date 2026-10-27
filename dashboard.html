@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Submissions | McDonald's Moment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'mcd-red': '#DA291C',
+            'mcd-yellow': '#FFC72C',
+            'mcd-dark': '#27251F',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-mcd-dark min-h-screen">
+
+  <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <svg class="w-9 h-9" viewBox="0 0 100 100" fill="none">
+            <path d="M20 75 C20 40 35 20 50 20 C65 20 80 40 80 75" stroke="#FFC72C" stroke-width="12" stroke-linecap="round" fill="none"/>
+            <path d="M35 75 C35 50 42 35 50 35 C58 35 65 50 65 75" stroke="#FFC72C" stroke-width="10" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span class="font-bold text-lg">McDonald's</span>
+        </a>
+        <div class="flex items-center gap-4">
+          <a href="submit.html" class="bg-mcd-yellow text-mcd-dark px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-400 transition">
+            + Upload New
+          </a>
+          <div class="w-9 h-9 bg-mcd-yellow rounded-full flex items-center justify-center font-bold text-sm">JD</div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="max-w-7xl mx-auto px-4 py-10">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+      <div>
+        <h1 class="text-3xl font-extrabold">My Submissions</h1>
+        <p class="text-gray-600 mt-1">Track the status of your videos</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+        <p class="text-sm text-gray-500">Total</p>
+        <p class="text-3xl font-extrabold mt-1">6</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+        <p class="text-sm text-gray-500">Pending</p>
+        <p class="text-3xl font-extrabold mt-1 text-yellow-600">2</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+        <p class="text-sm text-gray-500">Approved</p>
+        <p class="text-3xl font-extrabold mt-1 text-green-600">3</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+        <p class="text-sm text-gray-500">Rejected</p>
+        <p class="text-3xl font-extrabold mt-1 text-red-600">1</p>
+      </div>
+    </div>
+
+    <div class="flex gap-2 mb-6 overflow-x-auto pb-2">
+      <button class="px-4 py-2 rounded-full bg-mcd-red text-white text-sm font-medium whitespace-nowrap">All</button>
+      <button class="px-4 py-2 rounded-full bg-white border border-gray-200 text-sm font-medium hover:border-mcd-red transition whitespace-nowrap">Pending</button>
+      <button class="px-4 py-2 rounded-full bg-white border border-gray-200 text-sm font-medium hover:border-mcd-red transition whitespace-nowrap">Approved</button>
+      <button class="px-4 py-2 rounded-full bg-white border border-gray-200 text-sm font-medium hover:border-mcd-red transition whitespace-nowrap">Rejected</button>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div class="aspect-video bg-gradient-to-br from-red-100 to-yellow-100 flex items-center justify-center relative">
+          <span class="text-5xl">🍔</span>
+          <span class="absolute top-3 right-3 bg-green-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">Approved</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-lg">Best Burger Ever!</h3>
+          <p class="text-sm text-gray-500 mt-1">Submitted Oct 12, 2026</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-xs text-gray-400">Family Fun</span>
+            <button class="text-mcd-red text-sm font-medium hover:underline">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div class="aspect-video bg-gradient-to-br from-yellow-100 to-orange-100 flex items-center justify-center relative">
+          <span class="text-5xl">🍟</span>
+          <span class="absolute top-3 right-3 bg-yellow-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">Pending</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-lg">Fries with Friends</h3>
+          <p class="text-sm text-gray-500 mt-1">Submitted Oct 20, 2026</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-xs text-gray-400">Friendship</span>
+            <button class="text-mcd-red text-sm font-medium hover:underline">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div class="aspect-video bg-gradient-to-br from-red-50 to-pink-100 flex items-center justify-center relative">
+          <span class="text-5xl">🥤</span>
+          <span class="absolute top-3 right-3 bg-green-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">Approved</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-lg">McFlurry Magic</h3>
+          <p class="text-sm text-gray-500 mt-1">Submitted Oct 8, 2026</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-xs text-gray-400">Foodie Moment</span>
+            <button class="text-mcd-red text-sm font-medium hover:underline">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div class="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
+          <span class="text-5xl">🎬</span>
+          <span class="absolute top-3 right-3 bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">Rejected</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-lg">Drive Thru Adventure</h3>
+          <p class="text-sm text-gray-500 mt-1">Submitted Oct 5, 2026</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-xs text-gray-400">Drive-Thru Stories</span>
+            <button class="text-mcd-red text-sm font-medium hover:underline">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div class="aspect-video bg-gradient-to-br from-yellow-50 to-red-50 flex items-center justify-center relative">
+          <span class="text-5xl">🎁</span>
+          <span class="absolute top-3 right-3 bg-yellow-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">Pending</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-lg">Happy Meal Surprise</h3>
+          <p class="text-sm text-gray-500 mt-1">Submitted Oct 22, 2026</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-xs text-gray-400">Happy Meal Magic</span>
+            <button class="text-mcd-red text-sm font-medium hover:underline">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div class="aspect-video bg-gradient-to-br from-orange-100 to-yellow-100 flex items-center justify-center relative">
+          <span class="text-5xl">👨‍👩‍👧</span>
+          <span class="absolute top-3 right-3 bg-green-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">Approved</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-lg">Family Dinner Night</h3>
+          <p class="text-sm text-gray-500 mt-1">Submitted Sep 28, 2026</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-xs text-gray-400">Family Fun</span>
+            <button class="text-mcd-red text-sm font-medium hover:underline">View</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
