@@ -58,8 +58,8 @@
 
   <!-- Hero Section - matches reference-mockup -->
   <section class="relative overflow-hidden bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-      <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         
         <!-- Left Content -->
         <div class="order-2 lg:order-1">
@@ -95,15 +95,20 @@
           </div>
         </div>
         
-        <!-- Right Hero Image - uses the uploaded hero-people.jpg -->
+        <!-- Right Hero Image - blended to match reference-mockup -->
         <div class="order-1 lg:order-2 relative">
-          <div class="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/5">
+          <!-- Soft background glow to help the image blend -->
+          <div class="absolute -inset-4 bg-gradient-to-br from-yellow-50 via-white to-red-50 rounded-[2rem] blur-2xl opacity-70"></div>
+          
+          <div class="relative rounded-2xl overflow-hidden shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)]">
             <img 
               src="hero-people.jpg" 
               alt="Three friends laughing and enjoying McDonald's fries and drinks"
-              class="w-full h-full object-cover aspect-[4/3]"
+              class="w-full h-full object-cover object-center aspect-[4/3]"
               loading="eager"
             >
+            <!-- Subtle bottom fade so it blends into the white page -->
+            <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white/40 to-transparent pointer-events-none"></div>
           </div>
         </div>
       </div>
