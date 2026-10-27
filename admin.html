@@ -25,13 +25,14 @@
 </head>
 <body class="bg-gray-100 text-mcd-dark min-h-screen">
 
+  <!-- Admin Header -->
   <header class="bg-mcd-dark text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-14">
         <div class="flex items-center gap-3">
           <svg class="w-8 h-8" viewBox="0 0 100 100" fill="none">
-            <path d="M20 75 C20 40 35 20 50 20 C65 20 80 40 80 75" stroke="#FFC72C" stroke-width="12" stroke-linecap="round" fill="none"/>
-            <path d="M35 75 C35 50 42 35 50 35 C58 35 65 50 65 75" stroke="#FFC72C" stroke-width="10" stroke-linecap="round" fill="none"/>
+            <path d="M18 78 C18 38 36 18 50 18 C64 18 82 38 82 78" stroke="#FFC72C" stroke-width="14" stroke-linecap="round" fill="none"/>
+            <path d="M34 78 C34 50 42 34 50 34 C58 34 66 50 66 78" stroke="#FFC72C" stroke-width="11" stroke-linecap="round" fill="none"/>
           </svg>
           <span class="font-bold">Admin Panel</span>
           <span class="text-xs bg-mcd-yellow text-mcd-dark px-2 py-0.5 rounded-full font-semibold ml-2">McDonald's Moment</span>
@@ -46,6 +47,8 @@
   </header>
 
   <div class="max-w-7xl mx-auto px-4 py-8">
+    
+    <!-- Stats -->
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
       <div class="bg-white rounded-xl p-5 shadow-sm">
         <p class="text-sm text-gray-500">Pending Review</p>
@@ -65,12 +68,14 @@
       </div>
     </div>
 
+    <!-- Tabs -->
     <div class="flex gap-1 mb-6 bg-white rounded-xl p-1 shadow-sm w-fit">
       <button class="px-5 py-2 rounded-lg bg-mcd-red text-white text-sm font-medium">Review Queue</button>
       <button class="px-5 py-2 rounded-lg text-gray-600 text-sm font-medium hover:bg-gray-100">All Videos</button>
       <button class="px-5 py-2 rounded-lg text-gray-600 text-sm font-medium hover:bg-gray-100">Users</button>
     </div>
 
+    <!-- Queue -->
     <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
       <div class="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
         <h2 class="font-bold text-lg">Pending Videos</h2>
@@ -78,6 +83,8 @@
       </div>
       
       <div class="divide-y divide-gray-100">
+        
+        <!-- Item 1 -->
         <div class="p-5 flex flex-col sm:flex-row gap-5 hover:bg-gray-50 transition">
           <div class="w-full sm:w-40 aspect-video bg-gradient-to-br from-yellow-100 to-red-100 rounded-xl flex items-center justify-center shrink-0">
             <span class="text-4xl">🍟</span>
@@ -99,6 +106,7 @@
           </div>
         </div>
 
+        <!-- Item 2 -->
         <div class="p-5 flex flex-col sm:flex-row gap-5 hover:bg-gray-50 transition">
           <div class="w-full sm:w-40 aspect-video bg-gradient-to-br from-red-50 to-pink-100 rounded-xl flex items-center justify-center shrink-0">
             <span class="text-4xl">🍔</span>
@@ -119,6 +127,29 @@
             </div>
           </div>
         </div>
+
+        <!-- Item 3 -->
+        <div class="p-5 flex flex-col sm:flex-row gap-5 hover:bg-gray-50 transition">
+          <div class="w-full sm:w-40 aspect-video bg-gradient-to-br from-orange-100 to-yellow-100 rounded-xl flex items-center justify-center shrink-0">
+            <span class="text-4xl">🎁</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="font-bold text-lg">Happy Meal Unboxing</h3>
+                <p class="text-sm text-gray-500 mt-0.5">by Maria L. • Submitted 8 hours ago</p>
+                <p class="text-sm text-gray-600 mt-2">My kids' reaction to the new Happy Meal toys is priceless!</p>
+              </div>
+              <span class="bg-yellow-100 text-yellow-700 text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap">Pending</span>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">Approve</button>
+              <button class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">Reject</button>
+              <button class="border border-gray-200 hover:bg-gray-100 px-4 py-2 rounded-lg text-sm font-medium transition">Block User</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

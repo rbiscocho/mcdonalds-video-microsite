@@ -25,21 +25,22 @@
 </head>
 <body class="bg-gray-50 text-mcd-dark min-h-screen">
 
+  <!-- Navigation -->
   <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <a href="index.html" class="flex items-center gap-2">
           <svg class="w-9 h-9" viewBox="0 0 100 100" fill="none">
-            <path d="M20 75 C20 40 35 20 50 20 C65 20 80 40 80 75" stroke="#FFC72C" stroke-width="12" stroke-linecap="round" fill="none"/>
-            <path d="M35 75 C35 50 42 35 50 35 C58 35 65 50 65 75" stroke="#FFC72C" stroke-width="10" stroke-linecap="round" fill="none"/>
+            <path d="M18 78 C18 38 36 18 50 18 C64 18 82 38 82 78" stroke="#FFC72C" stroke-width="14" stroke-linecap="round" fill="none"/>
+            <path d="M34 78 C34 50 42 34 50 34 C58 34 66 50 66 78" stroke="#FFC72C" stroke-width="11" stroke-linecap="round" fill="none"/>
           </svg>
-          <span class="font-bold text-lg">McDonald's</span>
+          <span class="font-bold text-lg tracking-tight">McDonald's</span>
         </a>
         <div class="flex items-center gap-4">
           <a href="submit.html" class="bg-mcd-yellow text-mcd-dark px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-400 transition">
             + Upload New
           </a>
-          <div class="w-9 h-9 bg-mcd-yellow rounded-full flex items-center justify-center font-bold text-sm">JD</div>
+          <div class="w-9 h-9 bg-mcd-yellow rounded-full flex items-center justify-center font-bold text-sm text-mcd-dark">JD</div>
         </div>
       </div>
     </div>
@@ -53,6 +54,7 @@
       </div>
     </div>
 
+    <!-- Stats -->
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
       <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
         <p class="text-sm text-gray-500">Total</p>
@@ -72,6 +74,7 @@
       </div>
     </div>
 
+    <!-- Filters -->
     <div class="flex gap-2 mb-6 overflow-x-auto pb-2">
       <button class="px-4 py-2 rounded-full bg-mcd-red text-white text-sm font-medium whitespace-nowrap">All</button>
       <button class="px-4 py-2 rounded-full bg-white border border-gray-200 text-sm font-medium hover:border-mcd-red transition whitespace-nowrap">Pending</button>
@@ -79,7 +82,9 @@
       <button class="px-4 py-2 rounded-full bg-white border border-gray-200 text-sm font-medium hover:border-mcd-red transition whitespace-nowrap">Rejected</button>
     </div>
 
+    <!-- Grid -->
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
       <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition">
         <div class="aspect-video bg-gradient-to-br from-red-100 to-yellow-100 flex items-center justify-center relative">
           <span class="text-5xl">🍔</span>
@@ -169,6 +174,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
